@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-family: Ubuntu,Open Sans,Segoe UI,Tahoma,sans-serif;
+}
+
+.cb-u-background-primary--dark {
+	background-color: #0a6fba;
+}
+.cb-c-hero-background {
+	padding-bottom: 300px;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 2rem;
+	color: #333;
+}
+
+
+.searchBox {
+	margin-top: -150px;
+}
+
+.searchBox form {
+	margin: 0;
+	padding: 24px;
+	letter-spacing: 0px;
+	background-color: #f3ce56;
+}

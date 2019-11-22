@@ -1,0 +1,42 @@
+ol.suggestions {
+	position: absolute;
+	display: table;
+	padding: 0;
+	width: calc(100% - 80px);
+	left: 40px;
+	border-radius: 4px;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	list-style-position:inside;
+}
+
+ol.suggestions li {
+	background-color: #ffffff;
+	cursor: pointer;
+	display: table-row;
+}
+
+ol.suggestions li:not(:first-child) {
+	border-top: 1px solid #b4b4b4;
+}
+
+ol.suggestions li:hover {
+	background-color: #e7f4fe;
+}
+
+ol.suggestions li .suggestionResult {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 8px 16px;
+}
+
+ol.suggestions li .suggestionResult .badge-secondary {
+	min-width: 60px;
+	text-align: center;
+	border-radius: 4px;
+	background-color: rgb(150, 20, 18);
+}
+
+ol.suggestions li .suggestionResult span.region {
+	font-size: smaller;
+}
