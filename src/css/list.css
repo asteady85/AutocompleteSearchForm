@@ -34,8 +34,12 @@ ol.suggestions li .suggestionResult .badge-secondary {
 	min-width: 60px;
 	text-align: center;
 	border-radius: 4px;
-	background-color: rgb(150, 20, 18);
+	background-color: black;
 }
+
+ol.suggestions li .suggestionResult.A .badge-secondary { background-color: rgb(150, 20, 18); }
+ol.suggestions li .suggestionResult.C .badge-secondary { background-color: rgb(18, 80, 150); }
+ol.suggestions li .suggestionResult.T .badge-secondary { background-color: rgb(108, 114, 22); }
 
 ol.suggestions li .suggestionResult span.region {
 	font-size: smaller;

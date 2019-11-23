@@ -2,6 +2,7 @@
 import React from 'react';
 import { Badge } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+import { resultKeyToType } from '../utils/functions';
 import '../css/list.css';
 
 /**
@@ -26,8 +27,8 @@ function AutocompleteList(props) {
 
 						return (
 							<li className={className} key={suggestion.placeKey} onClick={props.onClick}>
-								<div className="suggestionResult pill">
-									<Badge variant="secondary">{suggestion.placeType}</Badge>
+								<div className={`suggestionResult pill ${suggestion.placeType}`}>
+									<Badge variant="secondary">{resultKeyToType(suggestion.placeType)}</Badge>
 								</div>
 								<div className="suggestionResult details">
 									<span className="name">{suggestion.name}</span>
